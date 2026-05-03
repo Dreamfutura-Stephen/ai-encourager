@@ -197,20 +197,26 @@ document.body.appendChild(a);
 
 **角色声线映射**（微软神经 TTS，独立 edge-tts 引擎）：
 
-| 角色 | 声线 | edge-tts 参数 |
-|------|------|--------------|
-| 小暖 | zh-CN-XiaoxiaoNeural | 默认 |
-| 星耐 | zh-CN-XiaoyiNeural | 默认 |
-| 龍子 | zh-TW-HsiaoChenNeural | 默认 |
-| 露娜 | zh-CN-XiaoxiaoNeural | `--rate=-15% --pitch=-5Hz` |
+| 角色 | 主声线 | 兜底声线 | edge-tts 参数 |
+|------|--------|---------|--------------|
+| 小暖 | zh-CN-XiaoxiaoNeural | — | 默认 |
+| 星耐 | zh-CN-XiaoyiNeural | — | 默认 |
+| 龍子 | zh-TW-HsiaoChenNeural | zh-CN-XiaoxiaoNeural | 默认；兜底 → `--rate=-25%` |
+| 露娜 | zh-CN-XiaoxiaoNeural | — | `--rate=-15% --pitch=-5Hz` |
 
-露娜与小暖共用晓晓声线，通过降速和压低音调拉开气质差距——从「温柔」变为「沉稳」，听觉上是两个不同的人。
+露娜与小暖共用晓晓声线，通过降速和压低音调拉开气质差距。龍子首选台湾晓臻女声，偶发回退男声时用晓晓降速兜底。
 
-**Step 1 生成命令按角色区分**：
+**Step 1 生成命令（带兜底）**：
 
 ```
-# 小暖 / 星耐 / 龍子（无额外参数）
+# 小暖 / 星耐（无兜底）
 edge-tts --voice 【声线】 --text "【鼓励语】" --write-media /tmp/voice.mp3
+
+# 龍子（带兜底：台湾声线失败时切回晓晓降速）
+edge-tts --voice zh-TW-HsiaoChenNeural --text "【鼓励语】" --write-media /tmp/voice.mp3
+if [ ! -s /tmp/voice.mp3 ]; then
+  edge-tts --voice zh-CN-XiaoxiaoNeural --rate=-25% --text "【鼓励语】" --write-media /tmp/voice.mp3
+fi
 
 # 露娜（带 rate 和 pitch 参数）
 edge-tts --voice zh-CN-XiaoxiaoNeural --rate=-15% --pitch=-5Hz --text "【鼓励语】" --write-media /tmp/voice.mp3

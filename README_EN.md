@@ -28,7 +28,7 @@ The skill activates and greets you in character. Say **"let's go"** / **"直接�
 |-----------|------|---------|-------|
 | **XiaoNuan** (default) | Gentle & caring | "You don't need to be better. You just need to be seen." | zh-CN-XiaoxiaoNeural |
 | **XingNai** | Energetic & cheerful | "Action is the best medicine. Starting is the biggest win." | zh-CN-XiaoyiNeural |
-| **LongZi** | Quiet & healing | "Sometimes not doing is also a valid way of doing." | zh-TW-HsiaoChenNeural |
+| **LongZi** | Quiet & healing | "Sometimes not doing is also a valid way of doing." | zh-TW-HsiaoChenNeural (fallback: Xiaoxiao -25% rate) |
 | **Luna** | Wise & sharp | "See the essence, then choose. You just need someone to steady you." | zh-CN-XiaoxiaoNeural (rate -15%, pitch -5Hz) |
 
 ## The One-Step Framework
