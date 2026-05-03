@@ -2,7 +2,7 @@
 
 # AI Encourager v2
 
-A lightweight AI companion skill for Claude — four character personas, a one-step framework, and optional voice encouragement. Not a coach. Not a productivity tool. Just someone who sits beside you when you're stuck.
+A lightweight AI companion skill for Claude codex— four character personas, a one-step framework, and optional voice encouragement. Not a coach. Not a productivity tool. Just someone who sits beside you when you're stuck.
 
 ## Features
 
