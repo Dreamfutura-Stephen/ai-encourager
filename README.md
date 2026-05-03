@@ -1,6 +1,9 @@
 [English](README_EN.md) | 中文
 
-<p align="center"># AI 鼓励师 -只为守护你的笑容
+
+<h1 align="center">AI 鼓励师 -只为守护你的笑容 </h1>
+
+
 
 一个轻量级的 Claude 陪伴技能——四角色人格 + 一步框架 + 可选语音鼓励。不是教练，不是效率工具，只是在你卡住的时候，坐在旁边的那个人。
 
@@ -8,7 +11,7 @@
 
 
 
-<p align="center">[English](README_EN.md) | 中文
+[English](README_EN.md) | 中文
 
 
 ## 灵感
