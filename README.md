@@ -10,9 +10,10 @@
 <img width="1536" height="1024" alt="ai鼓励师" src="https://github.com/user-attachments/assets/ad85d59d-4e1b-472b-8975-355d51da69e8" />
 
 
-
+<p align="center">
 [English](README_EN.md) | 中文
 
+</p>
 
 ## 灵感
 
