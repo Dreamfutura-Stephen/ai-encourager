@@ -1,5 +1,3 @@
-[English](README_EN.md) | 中文
-
 
 <h1 align="center">AI 鼓励师 -只为守护你的笑容 </h1>
 
@@ -11,7 +9,8 @@
 
 
 <p align="center">
-[English](README_EN.md) | 中文
+  <a href="README.zh-CN.md"><strong>简体中文</strong></a> •
+  <a href="README.en.md">English</a> •
 
 </p>
 
