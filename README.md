@@ -9,8 +9,8 @@
 
 
 <p align="center">
-  <a href="README.zh-CN.md"><strong>简体中文</strong></a> •
-  <a href="README.en.md">English</a> •
+  <a href="README_CN.md"><strong>简体中文</strong></a> •
+  <a href="README_EN.md">English</a> •
 
 </p>
 
